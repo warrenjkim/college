@@ -3,14 +3,15 @@
 \setlength\parindent{0pt}
 \setlength\headheight{15pt}
 
+\usepackage{bm}
 \usepackage{array}
 \usepackage{float}
 \usepackage{amsmath}
 \usepackage{caption}
 \usepackage{enumitem}
 \usepackage{fancyhdr}
-\usepackage{hyperref}
 \usepackage{tcolorbox}
+\usepackage[hidelinks]{hyperref}
 
 \newenvironment{example}{
 \begin{tcolorbox}[title=Example, colback=blue!5!white, colframe=black!75!blue]
@@ -25,7 +26,8 @@
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhf[HL]{\it{College Advice}}
-\fancyhf[HR]{\it{Warren Kim}}
+\cfoot{\thepage}
+% \fancyhf[HR]{\it{Warren Kim}}
 
 \begin{document}
 \tableofcontents
@@ -33,29 +35,31 @@
 
 \section{Overview}
 \label{sec:overview}
-In this document, I plan to give some insight into my college journey as well as
-some advice for making the most out of your college career. The material is
-intentionally terse since rigorous advice for college is typically handled on a
-case-by-case basis.
+I plan to give some insight into my college journey as well as some general
+advice for making the most out of your college career.
 
 \paragraph{Note:} A lot of the material will be biased towards Computer Science
-and Mathematics (where applicable).
+and Mathematics (where applicable). Additionally, \bf{everything from this point
+on is \it{my opinion}.}
+
+\paragraph{Note:} This document is pretty long. For convenience, the topics are
+ordered from most to least important. The blue Example boxes are less important
+than the plaintext. In this document,
 
 \subsection{Introduction}
 I am a transfer student (from IVC and Saddleback College) attending UCLA,
-majoring in Computer Science, and graduating in the Spring of 2024.
+majoring in Computer Science, and graduating in the Spring of 2024. I will be a
+Master's student at UCLA starting the Fall of 2024 studying Computer Science.
 
 \section{College Overview}
-This section covers two major aspects of colleges: ranking and major choice. It
-aims to offer an alternate perspective on these two topics.
 
 \subsection{Ranking (Name Brand)}
-A college's ranking \ib{does not matter}. Unless you want to attend a school for
-the brand name (which is fair), do more research into the field(s) you are
-interested in!
+A college's ranking (usually) \ib{does not matter}. Unless you want to attend a
+school for the brand name (which is fair), do more research into the field(s)
+you are interested in!
 \begin{example}
-    The University of Illinois Urbana-Champaign (UIUC) is ranked 35\th overall
-    but 5\th (above Cornell and Princeton!) in Computer Science.
+  The University of Illinois Urbana-Champaign (UIUC) is ranked 35\th overall
+  but 5\th (above Cornell, Princeton, and UCLA!) in Computer Science.
 \end{example}
 
 While a college's rank gives a general heuristic for the quality their
@@ -65,14 +69,16 @@ education, it should not dictate where you go.
 \subsection{Major Choice}
 If you do not know what you want to study in college yet, that is \ib{okay}! I
 \ib{do not} recommend applying for an ``easy to get in'' major with a plan to
-switch once you are (hopefully) there. Some departments do not allow for
-students within the school to change into a subset of majors.
+switch once you are there. Some departments do not allow for students within the
+school to change into a subset of majors.
 \begin{example}
-    It is (allegedly) extremely difficult to transfer into EECS at UC Berkeley
-    from another major.
+  It is (allegedly) extremely difficult to transfer into EECS at UC Berkeley
+  from another major. At UCLA, if you are a transfer student and get admitted
+  for a major that is outside the School of Engineering, they do not allow you
+  change into it.
 \end{example}
 
-\newpage
+
 \section{Choosing a College}
 Choosing a college to apply for (or attend) is an important and difficult
 decision. Here are a few things you may want to consider before deciding where
@@ -82,96 +88,38 @@ to apply (or attend).
 The criteria for choosing a college differs from person to person. Some
 questions to get you started are
 \begin{itemize}[label=$\to$]
-    \item What major do you want to study?
-    \item What do you want to get out of college?
-    \item Are you planning on going to graduate school?
-    \item Who would you like to study under?
+  \item What \it{exactly} do you want to study?
+  \item What do you want to get out of college?
+  \item Are you planning on going to graduate school?
 \end{itemize}
 
 We take a more in-depth look into these questions here.
 
-\paragraph{What major do you want to study?} This may be simple to answer, but
-remember to consider \it{all} of your options.
+\paragraph{What \ib{exactly} do you want to study?} This may be simple to
+answer, but remember to consider \it{all} of your options. Even if you think you
+know what you want to study, be sure to explore the nuances of your major!
 \begin{example}
-    Suppose you want to do research in Mathematics. The question then becomes
-    ``What branch of Mathematics?''. You may want to pursue a Pure Mathematics
-    degree if the answer is theory. If you want to research topics in industry,
-    then you may want to major in Applied Mathematics. If you want to study the
-    foundations of Mathematics, then maybe a Philosophy degree is more appropriate.
+  Suppose you want to study Mathematics. The question then becomes ``What branch
+  of Mathematics?''. You may want to pursue a Pure Mathematics degree if the
+  answer is theory. If you want to research topics in industry, then you may
+  want to major in Applied Mathematics. If you want to study the foundations of
+  Mathematics, then maybe a Philosophy degree is more appropriate.
 \end{example}
 
-\paragraph{What do you want out of college?} This question is pretty straightforward.
-``I want to go to college to make money'' is a respectable answer.
+\paragraph{What do you want out of college?} This question is pretty
+straightforward. ``I want to go to college to make money'' is a respectable
+answer. So is ``I want to make friends''! As long as you are honest with
+yourself, any answer is the correct answer.
 
 \paragraph{Are you planning on going to graduate school?} Depending on your
-major and career goals, graduate school may be an option or required. If you
-want to go to graduate school, be sure you know \it{why} you want to go. ``I've
-been in school for (about) 12 years, what's another 2-6?'' is a perfectly valid answer!
+major and career goals, graduate school may be an option or required. Even if
+you aren't planning on going to graduate school, I recommend keeping it open as
+an option. Your opinion might change as you go through college!
 \begin{example}
-    A graduate degree in Computer Science is usually not required for an entry
-    level job. However, a graduate program in Computer Science typically dives
-    more into the theory of computation as well as provides a structured
-    environment to learn or specialize in particular branches of the discipline.
-\end{example}
-
-\paragraph{Who would you like to study under?} This
-is the most important question. Remember, an education is only as good as the
-educator!
-\begin{example}
-    For Computer Science, I wanted to study under Professor Paul Eggert because
-    he has made significant contributions to the Linux kernel, particularly in
-    GNU \texttt{coreutils}, helped develop Emacs (a text editor similar to
-    Vim), and currently maintains the timezone database (tz) backed by ICANN.
-    I learned so much from his (lower division) Software Construction. He is
-    extremely knowledgeable about the Unix system and systems computing in
-    general (which is one of my many interests).
-\end{example}
-
-\begin{example}
-    For Computer Science, I wanted to study under Professor Alexander Sherstov
-    because of his unparalleled passion for teaching. His Theory of Computation
-    course (traditionally one of the most challenging courses in the Computer
-    Science curriculum) was made intuitive only because we were being taught by
-    someone who truly loved what he did. His teaching philosophy has no doubt
-    transformed generations of students.
-
-    \begin{quote}
-        ``Learning is a process; thank you for letting me be a part of
-        yours. As you all graduate and move on with your careers, I know the
-        future of computing is in good hands. All the best with the next step in
-        your careers!''
-        \vspace{-1em}
-        \begin{flushright}
-            -- Professor Alexander Sherstov
-        \end{flushright}
-        \vspace{-1em}
-    \end{quote}
-
-    The mission statement he gave in his last lecture was also very compelling,
-    and gave insight into his character.
-    \begin{quote}
-        ``When I took this course as an undergraduate, I sat where you sit now.
-        The first time I learned about undecidability, I was in shambles.
-        Surely, there must exist a computational algorithm for a given problem!
-        It was a long walk back to the apartment that day, and food didn't taste
-        the same for a couple of days... \it{But}, I had an idea. Even if most
-        of the interesting problems are undecidable, some are not. So, I need
-        not solve the general case; only the cases that matter. That is what I
-        have dedicated my life's work towards. As I conclude the final lecture
-        of the quarter, I hope you see the beauty of computation as I do, and I
-        hope you learned something about the theory of computation.''
-        \vspace{-1em}
-        \begin{flushright}
-            -- Professor Alexander Sherstov
-        \end{flushright}
-    \end{quote}
-\end{example}
-
-\begin{example}
-    For Mathematics, I wanted to study under Professor Alexander Merkurjev
-    because he has made significant contributions to the field of Algebra. The
-    Group Theory course I took under him piqued my interest in higher
-    abstractions of Mathematics.
+  A graduate degree in Computer Science is usually not required for an entry
+  level job. However, a graduate program in Computer Science typically dives
+  more into the theory of computation as well as provides a structured
+  environment to learn or specialize in particular branches of the discipline.
 \end{example}
 
 
@@ -181,24 +129,22 @@ advice, even for a Computer Science major. What I \it{can} do is give some
 general advice about approaching education.
 
 \subsection{Grades}
-Classes may not always seem useful or be the most engaging, but that's okay! To make
-the most of it, try to truly \it{learn} the material, even if they may not seem
-particularly relevant at the moment. While grades are important, it isn't as
-important as actually knowing the material. Quoting my professor,
+While grades are important, it isn't as important as actually \it{knowing} the
+material. This rings true especially for  major courses. I recommend
+prioritizing learning the material over chasing high grades. Typically, if you
+know the material, good grades will follow. Quoting my professor,
 \begin{quote}
-    ``If I did not have to give out grades, I would not. Only \it{you} know how
-    well you have done in this course. Your grade is merely a reflection of
-    three 2 hour \it{slivers} of time during the exams. I nor the teaching
-    assitants will be able to tell you how much you know about the theory of
-    computation. Your grade is just a letter; receiving an A and knowing nothing
-    pales in comparison to receiving a C but taking the time to truly learn the
-    course material. Be proud; this course is the most difficult course in the
-    Computer Science curriculum here at UCLA. No matter how much you \it{think}
-    you have learned, the reality of it is that you have learned so much more.''
-    \vspace{-1em}
-    \begin{flushright}
-        -- Professor Alexander Sherstov
-    \end{flushright}
+  ``If I didn't have to give out grades, I wouldn't. Only \it{you} know how much
+  you have grown throughout this course. Your grade is merely a reflection of
+  three 2 hour \it{slivers} of time during the exams; it does not capture the
+  full learning process. You should all be proud of yourselves; this course is
+  the most difficult course in the Computer Science curriculum here at UCLA. No
+  matter how much you \it{think} you have learned, the reality of it is that you
+  have learned so much more.''
+  \vspace{-1em}
+  \begin{flushright}
+    -- Professor Alexander Sherstov
+  \end{flushright}
 \end{quote}
 
 \subsection{Professors}
@@ -206,34 +152,217 @@ Talk to your professors! It sounds trivial but you would be surprised how empty
 some office hours can be. Professors are experts in their field, and are a great
 resource and mentors. Who knows, maybe they will offer you opportunities!
 \begin{example}
-    I got to know my Programming Languages professor very well, and we now climb
-    together! I even presented an advanced topic in data structures as a guest
-    lecturer for his introductory Data Structures class.
+  I got to know my Programming Languages professor very well, and we now climb
+  together! I even presented an advanced topic in data structures as a guest
+  lecturer for his introductory Data Structures class.
 \end{example}
 
-\subsection{Courses}
+\begin{example}
+  I got to know Professor Paul Eggert pretty well, who is a well-respected
+  developer in the open source community and a distinguished professor. He has
+  made significant contributions to the Linux kernel, particularly in GNU
+  \texttt{coreutils}, helped develop Emacs (a text editor similar to Vim), and
+  currently maintains the timezone database (tz) backed by ICANN. I learned so
+  much from his (lower division) Software Construction. He is extremely
+  knowledgeable about the Unix system and systems computing in general (which is
+  one of my many interests).
+\end{example}
+
+\subsection{Courses and Course Load}
 Take classes that are interesting to \it{you}. Explore outside of your major and
 see what piques your interest (even if it doesn't \it{directly} help with your
 major)!
 \begin{example}
-    I took proof-based math courses because math has always been interesting
-    to me, and it has helped me tremendously in more ways than one. The
-    learning curve was pretty steep, especially because we had to prove a lot of
-    things that seemed obvious (e.g. ``$a = -(-a)$'' seems so obvious that
-    it doesn't require a proof, but it does).
+  One of my friends is a Cognitive Science major and is taking (hard) Computer
+  Science electives because he was interested in the similarities of
+  how humans and computers think and learn.
 \end{example}
 
-\subsection{Course Load}
 Take a managable course load! ``Managable'' means something different to
 everybody, so use your best judgement.
 \begin{example}
-    Throughout community college and the first year and a half at UCLA, I was
-    working an average of 50 hours a week and taking four or more major-related
-    classes a semester/quarter. It was not the best for my sleep schedule and I
-    wasn't able to focus as well in class. I don't recommend it! Once I
-    decreased my course load to three classes, I was able to better understand
-    the material and get to know my professors better.
+  Throughout community college and the first year and a half at UCLA, I was
+  working an average of 72 hours a week and taking four or more major-related
+  classes a semester/quarter. It was not the best for my sleep schedule and I
+  wasn't able to focus as well in class. Once I quit my job, the grass got
+  greener, the sky turned blue, and I was able to engage in the course material.
 \end{example}
+
+\subsection{Aside: My Academic Journey}
+I was a very bad student up to and including high school. I rarely did homework
+in a timely manner, often doing it the period before it was due. I can't
+remember a time I did homework at home or studied for an exam. I didn't take any
+hard classes until junior year, and when I did, it was because all of my friends
+were taking them. Out of high school, I was rejected from almost every UC and
+CSU that I applied to, and so I was (in a way) ``forced'' to go to IVC (and
+eventually Saddleback).
+
+At community college, I met some brilliant instructors and professors, and I was
+very fortunate study under them. The slower pace of CC gave me an opportunity to
+mature and figure out what I wanted to study at university. I was able to
+maintain a good GPA throughout CC and got into every UC and CSU I applied to at
+the end of my second year. I ended up choosing to go to UCLA because it was
+comparatively cheaper than Berkeley.
+\vspace{1em}
+
+This anecdote is here to (hopefully) alleviate some worry about getting into a
+university right out of high school, or not knowing what you want to study. I
+took a pretty nontrivial path to university, but it definitely worked out for
+the better.
+\begin{center}
+  \vspace{5em}
+  \bf{$\bm{\sim}$ The rest of this page is intentionally left blank. $\bm{\sim}$}
+\end{center}
+
+\newpage
+\section{The UC System}
+\label{sec:uc}
+You were probably told that UC's are more research oriented and CSU's are more
+applied. While that certainly is true, there are some things you should keep in
+mind. Since I only have experience with UC's, I will focus the majority of my
+conversation talking about them.
+
+\subsection{Professors at a UC:}
+Depending on the department, most professors at a UC are hired for research and
+not for teaching. This is one of the reasons why you tend to learn more theory
+at UC's as opposed to CSU's.
+
+\subsection{Coursework at a UC:}
+To build atop of the last point, coursework is typically more theoretical. So,
+even if you study an applied science, you may learn more theory than you expect.
+\begin{example}
+  Most upper-division Computer Science courses at UCLA are \it{very} theoretical.
+  The amount of actual coding I do for coursework is minimal. I often write out
+  homework with pen and paper, since most of the questions assigned are not
+  programming tasks, but problem solving/proof-based questions. The
+  coding I did do for assignments typically did not directly relate to the
+  course material. However, \it{because} of my theory courses, I now better
+  understand the (seemingly infinite) web of Computer Science. I am
+  able to solve new and unique problems by applying, in part, the theory I
+  learned as well as my general software engineering skills.
+\end{example}
+
+\bf{One \ib{very} important note:} You should \ib{not} expect to learn ``everything''
+from your classes. In order to get the most out of the course, you should be
+researching topics outside the scope of the course. With how quickly the
+quarters pass by (unless you're at UC Berkeley), there simply isn't enough time
+to teach everything about a course topic in just ten weeks. Therefore, things
+\it{will} be left out.
+\begin{center}
+  \vspace{5em}
+  \bf{$\bm{\sim}$ The rest of this page is intentionally left blank. $\bm{\sim}$}
+\end{center}
+
+\newpage
+\section{Opinions}
+This section details my \ib{personal outlook} on education.
+\subsection{Theoretical Coursework}
+I believe that the theory behind your field is the most important thing you can
+learn. This is because I believe that it is important to know \it{why} you are
+doing the things you are, not just \it{how}. With the sheer amount of
+information on the internet, you are objectively able to learn \it{how}
+something works, or \it{how} to do a job (\it{especially} now due to tools like
+ChatGPT). However, a formal course provides a structured environment to learn
+\it{why} these things work. They will most definitely \ib{not} be applicable to
+day-to-day life, but the process of learning theory gives you an insight on how
+to solve new, creative problems.
+\begin{example}
+  I took abstract math courses (Algebra, Number Theory, and Set Theory) that
+  outline the foundations of the Mathematics we are familiar with. While they
+  don't directly make me better at Math or Computer Science, it gave me very
+  important insight into how I can solve new problems with the tools I am
+  given. For example, Number Theory and Ring Theory are heavily used in the
+  field of Cryptography. The RSA encryption algorithm is built using concepts
+  from Ring Theory. Set Theory is heavily used in Database and Programming
+  Language Theory, which gives me insight into the limits of computation in
+  those disciplines.
+\end{example}
+
+\subsection{Purpose of College}
+I believe the purpose of college is to immerse yourself into a field of study
+that \ib{you enjoy}. You often hear people say ``I don't use anything I learned
+from college at my job'', which may or may not be true. However, education and
+industry typically have disjoint philosophies. Education typically requires you
+to think rigorously about a question. Industry (typically) just wants things to
+get done. You are given (roughly) four years to explore the topic(s) of your
+choice, so you should take advantage of it!
+\begin{center}
+  \vspace{5em}
+  \bf{$\bm{\sim}$ The rest of this page is intentionally left blank. $\bm{\sim}$}
+\end{center}
+
+\newpage
+\subsection{Ancecdote: Professors}
+\ib{In my opinion}, a truly captivating professor has the ability to change your
+entire outlook on education, which was what happened to me. I originally
+attended college just to get a job, and so I tried to rush through it by taking
+as many courses per quarter as I could. However, my entire outlook changed after
+taking \ib{one} course (Theory of Computation). It was the first time I had met
+a professor so passionate about not only his research, but teaching as well. He
+is the sole reason I decided to pursue graduate school.
+\vspace{1em}
+
+Professor Alexander Sherstov is a brilliant professor, and has an unparalleled
+passion for teaching. His Theory of Computation course (traditionally one of the
+most challenging courses in any Computer Science curriculum) was made intuitive
+only because we were being taught by someone who had a true passion for
+teaching. His teaching philosophy has no doubt transformed generations of
+students.
+\begin{quote}
+  ``I firmly believe that research and teaching are completely disjoint
+  skills. A lot of times students, faculty, and administration believe that
+  those who conduct important and compelling research can naturally teach
+  subjects well, but this really is not true. A teacher must really keep the
+  students' best interest and understanding in mind, but in many cases,
+  professors do not necessarlily care about this since their first and
+  foremost interest is their research. Even textbooks are often written from a
+  researcher's perspective rather than a student's perspective; and again, the
+  student loses.''
+  \vspace{-1em}
+  \begin{flushright}
+    -- Professor Alexander Sherstov
+  \end{flushright}
+\end{quote}
+
+% \begin{quote}
+%   ``Learning is a process; thank you for letting me be a part of
+%   yours. As you all graduate and move on with your careers, I know the
+%   future of computing is in good hands. All the best with the next step in
+%   your careers!''
+%   \vspace{-1em}
+%   \begin{flushright}
+%     -- Professor Alexander Sherstov
+%   \end{flushright}
+%   \vspace{-1em}
+% \end{quote}
+
+The mission statement he gave in his last lecture was also very wholesome:
+\begin{quote}
+  ``I could not be more proud of you guys; we started with \it{nothing} but
+  first principles, and built our way \it{all the way up} to Turing machines!
+  You should take pride in completing this course. You now know what goes behind
+  what we call \it{computing}; no one can take that away from you. I want to
+  take these last moments of class to share an anecdote.
+  \vspace{0.5em}
+
+  The first time I learned about undecidability, I was in shambles. \it{Not
+  everything can be solved via algorithm? What is the point then?}. It was a
+  long walk back to the apartment that day, and food didn't taste the same for a
+  couple of days... \it{But}, I had a revelation; sure, some problems are
+  undecidable, but that doesn't mean that all of them are. My goal was to solve
+  at least \it{one} hard problem\footnote{He has solved \it{multiple} poblems
+  that were previously thought to be unsolvable!} that advances the study of
+  Computation. That is precisely what I have dedicated my life's work towards.
+  As I conclude the final lecture of the quarter, I want to thank you for
+  letting me be a part of your academic journey. As you all graduate and move on
+  with your careers, I know the future of computing is in good hands. I hope you
+  see the beauty of computation as I do, and I hope you learned something about
+  the theory of computation.''
+  \vspace{-1em}
+  \begin{flushright}
+    -- Professor Alexander Sherstov
+  \end{flushright}
+\end{quote}
 
 
 \newpage
@@ -242,231 +371,236 @@ For those interested, these were my high school and community college
 statistics.
 \subsection{High School}
 \begin{table}[ht]
-    \centering
-    \caption*{\it{Grade Point Averages}}
-    \vspace{-0.8em}
-    \begin{tabular}{l|c|c}
-        Type           & Weighted & Non-weighted \\
-        \hline
-        Academic 9-12  & 4.1538   & 3.7179 \\
-        Academic 10-12 & 4.3793   & 3.7931 \\
-    \end{tabular}
-    \vspace{-1em}
+  \centering
+  \caption*{\it{Grade Point Averages}}
+  \vspace{-0.8em}
+  \begin{tabular}{l|c|c}
+    Type       & Weighted     & Non-weighted \\
+    \hline
+    Academic 9-12  & 4.1538   & 3.7179 \\
+    Academic 10-12 & 4.3793   & 3.7931 \\
+  \end{tabular}
+  \vspace{-1em}
 \end{table}
 
 % freshman
 \begin{table}[H]
-    \centering
-    \caption*{\it{Freshman Year}}
-    \vspace{-0.8em}
-    \begin{tabular}{l|l}
-        Course          & Grade \\
-        \hline
-        English 1A      & A$-$  \\
-        Latin 1A        & A$-$  \\
-        Math IIA        & A     \\
-        Biology A       & B     \\
-        Cultl Gbl Age A & B     \\
-    \end{tabular}
-    \hspace{2em}
-    \begin{tabular}{l|l}
-        Course          & Grade \\
-        \hline
-        English 1B      & A     \\
-        Latin 1B        & B$+$  \\
-        Math IIA        & A     \\
-        Biology B       & B$+$  \\
-        Cultl Gbl Age B & B$+$  \\
-    \end{tabular}
-    \vspace{-1em}
+  \centering
+  \caption*{\it{Freshman Year}}
+  \vspace{-0.8em}
+  \begin{tabular}{l|l}
+    Course          & Grade \\
+    \hline
+    English 1A      & A$-$  \\
+    Latin 1A        & A$-$  \\
+    Math IIA        & A   \\
+    Biology A       & B   \\
+    Cultl Gbl Age A & B   \\
+  \end{tabular}
+  \hspace{2em}
+  \begin{tabular}{l|l}
+    Course      & Grade \\
+    \hline
+    English 1B      & A   \\
+    Latin 1B        & B$+$  \\
+    Math IIA        & A   \\
+    Biology B       & B$+$  \\
+    Cultl Gbl Age B & B$+$  \\
+  \end{tabular}
+  \vspace{-1em}
 \end{table}
 
 % sophomore
 \begin{table}[H]
-    \centering
-    \caption*{\it{Sophomore Year}}
-    \vspace{-0.8em}
-    \begin{tabular}{l|l}
-        Course          & Grade \\
-        \hline
-        English 2A      & A     \\
-        Latin 2A        & A     \\
-        Math IIIA       & A$+$  \\
-        Chemistry A     & A     \\
-        World History A & A     \\
-    \end{tabular}
-    \hspace{2em}
-    \begin{tabular}{l|l}
-        Course          & Grade \\
-        \hline
-        English 2B      & A     \\
-        Latin 2B        & A$-$  \\
-        Math IIIB       & A$+$  \\
-        Chemistry B     & A     \\
-        World History B & A     \\
-    \end{tabular}
-    \vspace{-1em}
+  \centering
+  \caption*{\it{Sophomore Year}}
+  \vspace{-0.8em}
+  \begin{tabular}{l|l}
+    Course          & Grade \\
+    \hline
+    English 2A      & A   \\
+    Latin 2A        & A   \\
+    Math IIIA       & A$+$  \\
+    Chemistry A     & A   \\
+    World History A & A   \\
+  \end{tabular}
+  \hspace{2em}
+  \begin{tabular}{l|l}
+    Course          & Grade \\
+    \hline
+    English 2B      & A   \\
+    Latin 2B        & A$-$  \\
+    Math IIIB       & A$+$  \\
+    Chemistry B     & A   \\
+    World History B & A   \\
+  \end{tabular}
+  \vspace{-1em}
 \end{table}
 
 % junior
 \begin{table}[H]
-    \centering
-    \caption*{\it{Junior Year}}
-    \vspace{-0.8em}
-    \begin{tabular}{l|l}
-        Course           & Grade \\
-        \hline
-        H American Lit A & A$-$ \\
-        H Latin 3A       & A$-$ \\
-        H Precalculus A  & A$-$ \\
-        AP Statistics A  & A    \\
-        AP Physics 1A    & C    \\
-        AP US History A  & B    \\
-    \end{tabular}
-    \hspace{2em}
-    \begin{tabular}{l|l}
-        Course           & Grade \\
-        \hline
-        H American Lit B & A     \\
-        H Latin 3B       & A$-$  \\
-        H Precalculus B  & A     \\
-        AP Statistics B  & A     \\
-        AP Physics 1B    & A$-$  \\
-        AP US History B  & A$-$  \\
-    \end{tabular}
-    \vspace{-1em}
+  \centering
+  \caption*{\it{Junior Year}}
+  \vspace{-0.8em}
+  \begin{tabular}{l|l}
+    Course           & Grade \\
+    \hline
+    H American Lit A & A$-$ \\
+    H Latin 3A       & A$-$ \\
+    H Precalculus A  & A$-$ \\
+    AP Statistics A  & A  \\
+    AP Physics 1A    & C  \\
+    AP US History A  & B  \\
+  \end{tabular}
+  \hspace{2em}
+  \begin{tabular}{l|l}
+    Course       & Grade \\
+    \hline
+    H American Lit B & A   \\
+    H Latin 3B       & A$-$  \\
+    H Precalculus B  & A   \\
+    AP Statistics B  & A   \\
+    AP Physics 1B    & A$-$  \\
+    AP US History B  & A$-$  \\
+  \end{tabular}
+  \vspace{-1em}
 \end{table}
 
 % senior
 \begin{table}[H]
-    \centering
-    \caption*{\it{Senior Year}}
-    \vspace{-0.8em}
-    \begin{tabular}{l|l}
-        Course           & Grade \\
-        \hline
-        AP Eng Lit A     & B     \\
-        AP Latin A       & A$-$  \\
-        AP Calc BC A     & B$-$  \\
-        AP Com Sci A     & B$+$  \\
-        AP Macro Econ    & A$-$  \\
-        Beg Ceramics A   & A$+$  \\
-    \end{tabular}
-    \hspace{2em}
-    \begin{tabular}{l|l}
-        Course           & Grade \\
-        \hline
-        AP Eng Lit B     & CR    \\
-        AP Latin B       & CR    \\
-        AP Calc BC B     & CR    \\
-        AP Com Sci B     & CR    \\
-        AP Macro Econ    & CR    \\
-        Beg Ceramics A   & CR    \\
-    \end{tabular}
+  \centering
+  \caption*{\it{Senior Year}}
+  \vspace{-0.8em}
+  \begin{tabular}{l|l}
+    Course       & Grade \\
+    \hline
+    AP Eng Lit A   & B   \\
+    AP Latin A     & A$-$  \\
+    AP Calc BC A   & B$-$  \\
+    AP Com Sci A   & B$+$  \\
+    AP Macro Econ  & A$-$  \\
+    Beg Ceramics A & A$+$  \\
+  \end{tabular}
+  \hspace{2em}
+  \begin{tabular}{l|l}
+    Course       & Grade \\
+    \hline
+    AP Eng Lit B   & CR  \\
+    AP Latin B     & CR  \\
+    AP Calc BC B   & CR  \\
+    AP Com Sci B   & CR  \\
+    AP Macro Econ  & CR  \\
+    Beg Ceramics A & CR  \\
+  \end{tabular}
 \end{table}
 \newpage
 
-\subsection{College}
+\subsection{AP Exam Scores}
 \begin{table}[H]
-    \centering
-    \caption*{\it{Grade Point Average}}
-    \vspace{-0.8em}
-    \begin{tabular}{l|c}
-        Type       & GPA  \\
-        \hline
-        Cumulative & 4.00 \\
-        Department & 4.00 \\
-    \end{tabular}
-    \vspace{-1em}
+  \centering
+  \vspace{-0.8em}
+  \begin{tabular}{l|l}
+    Exam    & Score \\
+    \hline
+    AP Physics 1              & 2 \\
+    AP Statistics             & 4 \\
+    AP Calculus BC            & 4 \\
+    AP U.S. History           & 3 \\
+    AP Lit. and Comp.         & 4 \\
+    AP Macroeconomics         & 5 \\
+    AP Computer Science A     & 4 \\
+    AP Environmental Science  & 3 \\
+    AP U.S. Gov. and Politics & 3 \\
+  \end{tabular}
+\end{table}
+
+\subsection{Community College}
+\begin{table}[H]
+  \centering
+  \caption*{\it{Grade Point Average}}
+  \vspace{-0.8em}
+  \begin{tabular}{l|c}
+    Type     & GPA  \\
+    \hline
+    Cumulative & 4.00 \\
+    Department & 4.00 \\
+  \end{tabular}
+  \vspace{-1em}
 \end{table}
 % first year
 \begin{table}[H]
-    \centering
-    \caption*{\it{First Year}}
-    \vspace{-0.8em}
-    \begin{tabular}{l|l}
-        Course                                 & Grade \\
-        \hline
-        C Programming                          & A \\
-        H Psychology 1                         & A \\
-        College Writing 2                      & A \\
-        Analytical Geometry/Calculus III       & A \\
-    \end{tabular}
-    \hfill
-    \begin{tabular}{l|l}
-        Course                                 & Grade \\
-        \hline
-        H Communications                       & A \\
-        Java Programming                       & A \\
-        Physics I (Kinematics)                 & A \\
-        Intro. to Linear Algebra               & A \\
-        Intro. to Computer Systems             & A \\
-    \end{tabular}
-    \vspace{-1em}
+  \centering
+  \caption*{\it{First Year}}
+  \vspace{-0.8em}
+  \begin{tabular}{l|l}
+    Course                               & Grade \\
+    \hline
+    C Programming                        & A \\
+    H Psychology 1                       & A \\
+    College Writing 2                    & A \\
+    Analytical Geometry/Calculus III     & A \\
+  \end{tabular}
+  \hfill
+  \begin{tabular}{l|l}
+    Course                           & Grade \\
+    \hline
+    H Communications                 & A \\
+    Java Programming                 & A \\
+    Physics I (Kinematics)           & A \\
+    Intro. to Linear Algebra         & A \\
+    Intro. to Computer Systems       & A \\
+  \end{tabular}
+  \vspace{-1em}
 \end{table}
 
 % summer session
 \begin{table}[H]
-    \centering
-    \vspace{-0.8em}
-    \caption*{\it{Summer Session}}
-    \begin{tabular}{l|l}
-        Course                                 & Grade \\
-        \hline
-        Intro. to Computer Science I           & A \\
-        H Principles of Microeconomics         & A \\
-        Physics II (Electricity \& Magnetism)  & A \\
-    \end{tabular}
-    \vspace{-1em}
+  \centering
+  \vspace{-0.8em}
+  \caption*{\it{Summer Session}}
+  \begin{tabular}{l|l}
+    Course                                 & Grade \\
+    \hline
+    Intro. to Computer Science I           & A \\
+    H Principles of Microeconomics         & A \\
+    Physics II (Electricity \& Magnetism)  & A \\
+  \end{tabular}
+  \vspace{-1em}
 \end{table}
 
 % second year
 \begin{table}[H]
-    \centering
-    \vspace{-0.8em}
-    \caption*{\it{Second Year}}
-    \begin{tabular}{l|l}
-        Course                                 & Grade \\
-        \hline
-        Assembly Language I                    & A \\
-        H Film \& US Culture                   & A \\
-        Discrete Mathematics I                 & A \\
-        Intro. to Computer Science II          & A \\
-        Elementary Differential Equations      & A \\
+  \centering
+  \vspace{-0.8em}
+  \caption*{\it{Second Year}}
+  \begin{tabular}{l|l}
+    Course                             & Grade \\
+    \hline
+    Assembly Language I                & A \\
+    H Film \& US Culture               & A \\
+    Discrete Mathematics I             & A \\
+    Intro. to Computer Science II      & A \\
+    Elementary Differential Equations  & A \\
 
 
-    \end{tabular}
-    \hfill
-    \begin{tabular}{l|l}
-        Course                                 & Grade \\
-        \hline
-        Assembly Language II                   & A \\
-        Discrete Mathematics II                & A \\
-        H Academic, Career, Life               & A \\
-        Intro. to Computer Science III         & A \\
-        Data Structures and Algorithms         & A \\
-    \end{tabular}
+  \end{tabular}
+  \hfill
+  \begin{tabular}{l|l}
+    Course                         & Grade \\
+    \hline
+    Physics III (General)          & A \\
+    Assembly Language II           & A \\
+    Discrete Mathematics II        & A \\
+    H Academic, Career, Life       & A \\
+    Intro. to Computer Science III & A \\
+    Data Structures and Algorithms & A \\
+  \end{tabular}
 \end{table}
-
-
-
-
-things i would like to talk about
-\begin{itemize}[label=$\to$]
-    \item CSU or UC?
-    \item School name
-    \item Major choice
-    \item Outside of CA
-\end{itemize}
 \end{document}
-
-
-\end{document}
-
 % PAGE BREAK COMMENT
 % \begin{center}
-%     \vspace{5em}
-%     \bf{The rest of this page is intentionally left blank.}
+%   \vspace{5em}
+%   \bf{The rest of this page is intentionally left blank.}
 % \end{center}
 %
 % \newpage
